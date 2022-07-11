@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
+    <!-- LOGO -->
+    
+    <link rel="shortcut icon" href="assets/fotos/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <header id="header" class="scroll">
+        <nav class="container">
+          <a class="logo" href="#">>FEST<span>|</span>VIVA</span></a>
+
+        </nav>
+      </header>
+    </header>
+
+     <!-- Cabeçalho  -->
+     <div>
+      <h1 id="titulo">Ingresos</h1>
+      <br>
+      <p id="subtitulo">Complete suas informações</p>
+      <br>
+  </div>
+
+  <!-- Início do formulário -->
+  <form>
+
+      <fieldset class="grupo">
+         
+          <div class="campo">
+              <label for="nome"><strong>Nome</strong></label>
+              <input type="text" name="nome" id="nome" required>
+          </div>
+
+          <div class="campo">
+              <label for="sobrenome"><strong>Sobrenome</strong></label>
+              <input type="text" name="sobrenome" id="sobrenome" required>
+          </div>
+      </fieldset> 
+
+      <!-- Campo de email com-->
+      <div class="campo">
+          <label for="email"><strong>Email</strong></label>
+          <input type="email" name="email" id="email" required>
+      </div>
+
+      
+      <div class="campo">
+          <label><strong>Qual show você gostaria?</strong></label>
+          <label>
+              <input type="radio" name="devweb" value="metalica" checked>Metalica
+          </label>
+          <label>
+              <input type="radio" name="devweb" value="Jão">Jão
+          </label>
+          <label>
+              <input type="radio" name="devweb" value="AnaVitoria">AnaVitoria
+          </label>
+          <label>
+            <input type="radio" name="devweb" value="Melim">Melim
+        </label>
+      </div>
+
+      <!-- ====== DATA DO EVENTO ====== -->
+      <div class="campo">
+          <label for="senioridade"><strong>Data</strong></label>
+          <select id="senioridade" required>
+            <option selected disabled value="">Selecione</option>
+            <option>07/05/2022</option>
+            <option>08/05/2022</option>
+            <option>09/05/2022</option>
+          </select>
+      </div>
+
+      <fieldset class="grupo">
+          <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+          <div id="check">
+              <label><strong>Selecione:</strong></label><br><br>
+              <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+              <label for="tecnologia1"> Premium</label>
+              <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+              <label for="tecnologia2"> Bloco1</label>
+              <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+              <label for="tecnologia3"> Bloco2</label>
+              <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+              <label for="tecnologia4"> Bloco3</label>
+              <br><br>
+             
+          </div>
+      </fieldset>
+
+      <!-- Caixa de texto -->
+      <div>
+        <label><strong>Meia entrada:</strong></label><br><br>
+            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+            <label for="tecnologia1"> Sim</label>
+            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+            <label for="tecnologia2"> Não</label>
+
+
+      </div>
+      <div class="campo">
+          <br>
+          <label for="experiencia"><strong>Descrição: </strong></label>
+          <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+      </div> 
+
+      <!-- Botão para enviar o formulário -->
+      <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+  </form>
+ 
+  <script src="script.js"></script>
+  </body>
+
+</html>
